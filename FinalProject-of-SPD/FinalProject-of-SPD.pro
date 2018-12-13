@@ -26,14 +26,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    stuinfomanagesystem.cpp
+    stuinfomanagesystem.cpp \
+    recorddialog.cpp
 
 HEADERS += \
         mainwindow.h \
-    stuinfomanagesystem.h
+    stuinfomanagesystem.h \
+    recorddialog.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    recorddialog.ui
 
 RESOURCES += \
     mainresource.qrc
