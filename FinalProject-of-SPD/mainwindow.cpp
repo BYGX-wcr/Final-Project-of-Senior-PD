@@ -186,7 +186,8 @@ void MainWindow::closeTable()
 void MainWindow::saveTable()
 {
     int index = ui->tabWidget->currentIndex();
-    saveViewChange(index);
+    if (ui->tabWidget->tabText(index).endsWith(CHANGE_TAG))
+        saveViewChange(index);
 }
 void MainWindow::saveAllTable()
 {
